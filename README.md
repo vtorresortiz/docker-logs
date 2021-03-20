@@ -1,4 +1,6 @@
 # docker-logs
 
-To start
+Docker compose logs to splunk using fluentd
+
+- To start
 > make
