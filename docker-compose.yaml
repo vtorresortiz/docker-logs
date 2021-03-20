@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  app:
+    build: app
+    logging:
+      driver: "fluentd"
+      options:
+        fluentd-address: "localhost:24224"
+    depends_on: 
+      - fluentd
+  fluentd:
+    build: fluentd
+    ports:
+      - "24224:24224"
+  splunk:
+    image: splunk/splunk:latest
+    environment:
+      - SPLUNK_PASSWORD=admin1234
+      - SPLUNK_START_ARGS=--accept-license
+      - SPLUNK_HEC_TOKEN=bb3714bf-b59c-4971-94b7-30c9244c803a
+    volumes:
+      - ./splunk/default.yml:/tmp/defaults/default.yml
+    ports:
+      - 8000:8000
+      - 8088:8088
