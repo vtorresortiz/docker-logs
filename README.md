@@ -2,5 +2,5 @@
 
 Docker compose logs to splunk using fluentd
 
-- To start
+To start
 > make
