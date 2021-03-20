@@ -7,4 +7,4 @@ To start
 make
 ```
 
-See logs in splunk in http://localhost:8000/en-US/app/search/search?q=index=*
+See logs in splunk in [http://localhost:8000](http://localhost:8000/en-US/app/search/search?q=index=*)
