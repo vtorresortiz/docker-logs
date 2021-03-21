@@ -5,3 +5,5 @@ up:
 	docker-compose up
 rm:
 	docker-compose rm
+kill:
+	docker-compose kill
