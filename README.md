@@ -8,3 +8,5 @@ make
 ```
 
 See logs in splunk in [http://localhost:8000](http://localhost:8000/en-US/app/search/search?q=index=*)
+- user: admin
+- pass: admin1234
