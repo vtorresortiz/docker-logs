@@ -1,4 +1,11 @@
 splunk:
+  conf:
+    - key: props
+      value: 
+        directory: /opt/splunk/etc/apps
+        content:
+          default:
+            KV_MODE : auto
   hec:
     enable: True
     ssl: false
