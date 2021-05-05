@@ -1,6 +1,6 @@
 # Docker compose logs to splunk using fluentd
 
-A dummy app/ to log on STDOUT and use Docker Compose to enable fluentd collect them and send it to Splunk with HEC plugin.
+A dummy app/ to log on STDOUT and use fluentd to collect them and send it to Splunk with HEC plugin on docker compose.
 
 To start
 ```
